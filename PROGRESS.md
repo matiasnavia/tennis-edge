@@ -8,7 +8,7 @@ Legend: ✅ done · 🔄 in progress · ⬜ not started
 - ✅ Colab notebook preserved in `notebooks/00_colab_win_rates.ipynb`
 - ✅ Virtual environment (`.venv`) with pandas
 - ✅ Git repository and first commit
-- ⬜ Private GitHub repository and first push
+- ✅ Private GitHub repository and first push (github.com/matiasnavia/tennis-edge)
 
 ## Milestone 1 – Data loading and validation
 - ⬜ Move the data loading into reusable code in `src/` (download once, cache in `data/raw/`)
