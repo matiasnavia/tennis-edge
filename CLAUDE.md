@@ -7,5 +7,7 @@
 - Keep code simple and readable; no new libraries or architecture without a reason.
 - Research rules: no data leakage, chronological validation, strong baselines (Elo, market),
   calibration, honest results, check data licences.
+- When a session gets long or a new milestone starts, suggest opening a fresh session
+  (it should start by reading PROGRESS.md).
 - Keep PROGRESS.md up to date. Never mark a milestone done unless it is done and verified.
 - Python: use `py -3.12` or `.venv\Scripts\python.exe`; plain `python` may hit the Microsoft Store alias.
