@@ -11,7 +11,8 @@ Legend: ✅ done · 🔄 in progress · ⬜ not started
 - ✅ Private GitHub repository and first push (github.com/matiasnavia/tennis-edge)
 
 ## Milestone 1 – Data loading and validation
-- ⬜ Move the data loading into reusable code in `src/` (download once, cache in `data/raw/`)
+- ✅ Move the data loading into reusable code in `src/` (`tennis_edge.data.load_matches`, cached in `data/raw/`)
+- ✅ Move `calculate_win_rate` into `src/tennis_edge/stats.py` and pass the tests in `tests/test_stats.py`
 - ✅ Refactor `calculate_win_rate` to take the data as an argument (exercise in `notebooks/01_win_rate_function.ipynb`)
 - ⬜ Validate the 2024 dataset: duplicates, dates, walkovers/retirements, missing values
 - ⬜ Confirm the dataset licence

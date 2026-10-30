@@ -4,6 +4,8 @@
 # Python cache files
 __pycache__/
 *.pyc
+*.egg-info/
+.pytest_cache/
 
 # Jupyter checkpoints
 .ipynb_checkpoints/
