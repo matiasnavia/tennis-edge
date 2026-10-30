@@ -12,7 +12,7 @@ Legend: ✅ done · 🔄 in progress · ⬜ not started
 
 ## Milestone 1 – Data loading and validation
 - ⬜ Move the data loading into reusable code in `src/` (download once, cache in `data/raw/`)
-- ⬜ Refactor `calculate_win_rate` to take the data as an argument (learning exercise)
+- ✅ Refactor `calculate_win_rate` to take the data as an argument (exercise in `notebooks/01_win_rate_function.ipynb`)
 - ⬜ Validate the 2024 dataset: duplicates, dates, walkovers/retirements, missing values
 - ⬜ Confirm the dataset licence
 - ⬜ Extend to several seasons (needed for chronological validation)
@@ -32,4 +32,7 @@ Legend: ✅ done · 🔄 in progress · ⬜ not started
 ## Findings so far
 Descriptive only, from the 2024 dataset (not yet validated):
 - Carlos Alcaraz: 54 wins, 13 losses (80.6%); on clay 17–4 (81.0%).
+- Alcaraz on clay before 2024-07-01: 12–3 (80.0%). The extra 5–1 is the Paris Olympics.
 - These are win rates, **not** match-win probabilities against a specific opponent.
+- Data caveat: `tourney_date` is the tournament **start** date, not the match date. All
+  matches of a tournament share it, so date filters must account for this to avoid leakage.
