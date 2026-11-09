@@ -48,7 +48,7 @@ pip install -r requirements.txt        # install packages
 
 | Dataset | Source | Licence | Status |
 |---|---|---|---|
-| ATP matches 2024 | [farhadGithub/tennis-atp-data](https://github.com/farhadGithub/tennis-atp-data), apparently derived from Jeff Sackmann's [tennis_atp](https://github.com/JeffSackmann/tennis_atp) | Sackmann's data is CC BY-NC-SA 4.0 (non-commercial, attribution, share-alike) — **to verify for this mirror** | In use, not yet validated |
+| ATP matches 1991–2024 | [farhadGithub/tennis-atp-data](https://github.com/farhadGithub/tennis-atp-data), apparently derived from Jeff Sackmann's [tennis_atp](https://github.com/JeffSackmann/tennis_atp) | Sackmann's data is CC BY-NC-SA 4.0 (non-commercial, attribution, share-alike) — **to verify for this mirror** | In use, not yet validated |
 
 Raw data files are kept out of Git and downloaded by code, so the repository does not
 redistribute anyone else's data.

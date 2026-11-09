@@ -19,3 +19,9 @@ def load_matches(year):
         matches = pd.read_csv(DATA_URL.format(year=year))
         matches.to_csv(path, index=False)
     return pd.read_csv(path)
+
+
+def load_seasons(first_year, last_year):
+    """Return the ATP matches from first_year to last_year (both included), oldest first."""
+    seasons = [load_matches(year) for year in range(first_year, last_year + 1)]
+    return pd.concat(seasons, ignore_index=True)

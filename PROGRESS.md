@@ -14,9 +14,11 @@ Legend: ✅ done · 🔄 in progress · ⬜ not started
 - ✅ Move the data loading into reusable code in `src/` (`tennis_edge.data.load_matches`, cached in `data/raw/`)
 - ✅ Move `calculate_win_rate` into `src/tennis_edge/stats.py` and pass the tests in `tests/test_stats.py`
 - ✅ Refactor `calculate_win_rate` to take the data as an argument (exercise in `notebooks/01_win_rate_function.ipynb`)
-- ⬜ Validate the 2024 dataset: duplicates, dates, walkovers/retirements, missing values
+- ✅ Extend to several seasons: `tennis_edge.data.load_seasons(1991, 2024)` → 108,375 matches
+  (1991 chosen as the start: match stats are complete from then; earlier seasons give little extra)
+- 🔄 Validate the 1991–2024 dataset: duplicates, dates, walkovers/retirements, missing values
+  (exercise in `notebooks/02_validate_dataset.ipynb`; part 1, duplicates, is next)
 - ⬜ Confirm the dataset licence
-- ⬜ Extend to several seasons (needed for chronological validation)
 
 ## Milestone 2 – First predictive baseline
 - ⬜ Simple baselines (higher-ranked player wins; ranking-based probability)
